@@ -6,9 +6,9 @@
  *Return num of chars printd
  */
 
-int print_integers(va_list args)
+int print_integers(va_list arg)
 {
-    int n = va_arg(args, int);
+    int n = va_arg(arg, int);
     int numb, last = n % 10, digit, exp = 1;
     int i = 1;
 
@@ -52,9 +52,9 @@ int print_integers(va_list args)
  *Return numb of chars printd
  */
 
-int print_deimal(va_list args)
+int print_deimal(va_list ar)
 {
-    int n = va_arg(args, int);
+    int n = va_arg(arg, int);
     int numb, last = n % 10, digit, exp = 1;
     int i = 1;
 
