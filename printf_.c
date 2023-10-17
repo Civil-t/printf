@@ -69,12 +69,12 @@ const char *handle_conversion(const char *format, int *count, va_list args)
 
 /**
  * 
- * _printf1 - our custom printf function
+ * _printf_ - our custom printf function
  * @format: The format string
  * Return: numberber of the characters printed
  *
  */
-int _printf1(const char *format, ...)
+int _printf_(const char *format, ...)
 {
 	int print_character = 0;
 
