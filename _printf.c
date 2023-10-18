@@ -32,9 +32,9 @@ return (character_print('%') + character_print(specifier));
 int _printf(const char *format, ...)
 {
 va_list	args;
-int iterations, i;
+int iteration, i;
 
-iterations = 0, i = 0;
+iteration = 0, i = 0;
 if (format == NULL)
 {
 return (-1);
@@ -45,12 +45,12 @@ while (format[i] != '\0')
 if (format[i] == '%')
 {
 i++;
-iterations += handle_specifier(format[i], args);
+iteration += handle_specifier(format[i], args);
 }
 else
-iterations += character_print(format[i]);
+iteration += character_print(format[i]);
 i++;
 }
 va_end(args);
-return (iterations);
+return (iteration);
 }
