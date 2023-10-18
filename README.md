@@ -1,1 +1,1 @@
-A readme file for the printf project for Darys and Tapiwa
+# Readme file for printf partner project
