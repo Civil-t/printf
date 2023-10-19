@@ -13,6 +13,7 @@ switch (specifier)
 case 's':
 return (print_strings());
 case 'i':
+case 'd':
 return (print_integers(va_arg(args, int)));
 case 'c':
 return (print_characters(va_arg(args, int)));
