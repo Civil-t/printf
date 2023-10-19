@@ -19,7 +19,7 @@ return (print_characters(va_arg(args, int)));
 case '%':
 return (print_percents());
 default:
-return (character_print('%') + character_print(specifier));
+return (print_characters('%') + print_characters(specifier));
 }
 }
 
