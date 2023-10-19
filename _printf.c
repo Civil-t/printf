@@ -11,7 +11,7 @@ int handle_specifier(char specifier, va_list args)
 switch (specifier)
 {
 case 's':
-return (print_strings(va_arg(args, char *)));
+return (print_strings());
 case 'i':
 return (print_integers(va_arg(args, int)));
 case 'c':
