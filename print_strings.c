@@ -5,7 +5,7 @@
  * Return: void (nothing)
  *
  */
-int print_percents(void)
+int print_strings(void)
 {
 return (write(1, "%", 1));
 }

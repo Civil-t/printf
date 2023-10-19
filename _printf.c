@@ -48,7 +48,7 @@ i++;
 iteration += handle_specifier(format[i], args);
 }
 else
-iteration += character_print(format[i]);
+iteration += print_characters(format[i]);
 i++;
 }
 va_end(args);
