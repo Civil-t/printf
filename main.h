@@ -21,6 +21,6 @@ int print_integers(int n);
 int print_percents(void);
 
 /*printing strings*/
-int print_strings(char *str);
+int print_strings(void);
 
 #endif
