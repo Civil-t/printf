@@ -10,15 +10,29 @@ int handle_specifier(char specifier, va_list args)
 {
 switch (specifier)
 {
+case 'x':
+return (print_hexadecimals(va_arg(args, unsigned long int), 0));
+case 'X':
+return (print_hexadecimals(va_arg(args, unsigned long int), 1));
 case 's':
 return (print_strings());
-case 'i':
 case 'd':
+case 'i':
 return (print_integers(va_arg(args, int)));
 case 'c':
 return (print_characters(va_arg(args, int)));
 case '%':
 return (print_percents());
+case 'u':
+return (print_unsigned(va_arg(args, unsigned int)));
+case 'b':
+return (print_binaries(va_arg(args, unsigned int)));
+case 'o':
+return (print_octals(va_arg(args, unsigned int)));
+case 'S':
+return (prints_S(va_arg(args, char *)));
+case 'p':
+return (print_pointers(va_arg(args, void *)));
 default:
 return (print_characters('%') + print_characters(specifier));
 }
