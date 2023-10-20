@@ -23,4 +23,22 @@ int print_percents(void);
 /*printing strings*/
 int print_strings(void);
 
+/*printing binaries*/
+int print_binaries(unsigned int n);
+
+/*printing hexadecimals*/
+int print_hexadecimals(unsigned long int n, int uppercase);
+
+/*printing octals*/
+int print_octals(unsigned int n);
+
+/*printing S*/
+int prints_S(char *str);
+
+/*printig unsigned integers*/
+int print_unsigned(unsigned int n);
+
+/*printing pointer value*/
+int print_pointers(void *ptr);
+
 #endif
